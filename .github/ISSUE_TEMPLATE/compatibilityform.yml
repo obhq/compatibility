@@ -1,0 +1,99 @@
+name: Game Compatibility
+description: The form used for reporting issues and compatibility for games on Obliteration.
+body:
+  - type: input
+    id: app-title
+    attributes:
+      label: Application Title
+      description: The name of the application
+      placeholder: App Name
+    validations:
+      required: true
+  - type: input
+    id: app-titleid
+    attributes:
+      label: Application TitleID
+      description: The TitleID of the application.
+      placeholder: CUSA00000
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Application Version
+      description: Use update version for games, and firmware version for system apps
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input  
+    id: fw-version
+    attributes:
+      label: Firmware Version
+      description: Version of PS4 Firmware installed on Obliteration
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: emulator-build
+    attributes:
+      label: Emulator Version
+      description: Use Dev-NUM for development builds, and Rel-NUM for release builds.
+      placeholder: Dev-000 or Rel-0.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: emulation-status
+    attributes:
+      label: Game Status
+      options:
+        - Playable
+        - Ingame
+        - Intro
+        - Boots
+        - Nothing
+      description: "Playable: Game runs with no crashes or performance issues. | Ingame: Game runs with midgame crashes, abnormal bugs, or detrimental performance | Intro: Game runs with audio/video output, but crashes past menus or intro. | Boots: Game gives minimal audio/video output before crashing | Nothing: Game crashes before giving any audio/video output"
+    validations:
+      required: true
+  - type: textarea
+    id: specifications
+    attributes:
+      label: Specifications
+      value: |
+        - ##### CPU: *CPU*
+        - ##### GPU: *GPU*
+        - ##### RAM: *MemoryAmount*
+        - #####  OS: *OperatingSystem*
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Explaination about the game's status.
+      placeholder: Description about game here.
+    validations:
+      required: true
+  - type: textarea
+    id: upload-images
+    attributes:
+      label: Images
+      description: If the game is providing graphical output, upload screenshots if possible!
+      placeholder: Images here!
+    validations:
+      required: false
+  - type: textarea
+    id: log-data
+    attributes:
+      label: Log
+      description: You can copy the log text from the console or UI, or, you can find the log file from your local Appdata folder.
+      value: |
+        For pasting text:
+        <details>
+          <summary>
+           Log Paste:
+          </summary>
+          <code>PASTEHERE
+          </code>
+        </details>
+    validations:
+      required: true
