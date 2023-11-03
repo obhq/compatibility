@@ -22,7 +22,7 @@ body:
     attributes:
       label: Application Version
       description: Use update version for games, and firmware version for system apps
-      placeholder: "1.0.0"
+      placeholder: "1.00"
     validations:
       required: true
   - type: input  
@@ -30,7 +30,7 @@ body:
     attributes:
       label: Firmware Version
       description: Version of PS4 Firmware installed on Obliteration
-      placeholder: "1.0.0"
+      placeholder: "1.00"
     validations:
       required: true
   - type: input
