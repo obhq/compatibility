@@ -85,9 +85,8 @@ body:
     id: log-data
     attributes:
       label: Log
-      description: You can copy the log text from the console or UI, or, you can find the log file from your local Appdata folder.
+      description: You can copy the log text from the console or UI, or, you can find the log file from your local Appdata folder. **Use the PASTEHERE only if you're using copy and paste instead of a file**
       value: |
-        For pasting text:
         <details>
           <summary>
            Log Paste:
