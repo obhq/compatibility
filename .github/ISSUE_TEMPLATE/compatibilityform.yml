@@ -93,7 +93,7 @@ body:
            Log Paste:
           </summary>
           <code>PASTEHERE
-          </code>
+        </code>
         </details>
     validations:
       required: true
